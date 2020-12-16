@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kintamieji20201214", "kintamieji20201214\kintamieji20201214.csproj", "{CAE4A875-F4A7-4514-9E75-0629202F3AB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consoleIvestis", "consoleIvestis\consoleIvestis.csproj", "{C20DBA29-313C-4331-92C6-BFE65A7368F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleIsvestis2", "ConsoleIsvestis2\ConsoleIsvestis2.csproj", "{690FA90C-BEC5-4D06-A7FD-A0C7B88350CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CAE4A875-F4A7-4514-9E75-0629202F3AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE4A875-F4A7-4514-9E75-0629202F3AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE4A875-F4A7-4514-9E75-0629202F3AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20DBA29-313C-4331-92C6-BFE65A7368F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20DBA29-313C-4331-92C6-BFE65A7368F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20DBA29-313C-4331-92C6-BFE65A7368F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20DBA29-313C-4331-92C6-BFE65A7368F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690FA90C-BEC5-4D06-A7FD-A0C7B88350CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690FA90C-BEC5-4D06-A7FD-A0C7B88350CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690FA90C-BEC5-4D06-A7FD-A0C7B88350CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690FA90C-BEC5-4D06-A7FD-A0C7B88350CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
