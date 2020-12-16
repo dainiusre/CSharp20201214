@@ -10,7 +10,7 @@ namespace _20201612StudentoAmziausTikrinimas
     {
         static void Main(string[] args)
         {
-            int a = 18;
+            int a = 17;
             int b = 65;
             Console.WriteLine("Studento amzius: ");
             double amzius = double.Parse(Console.ReadLine());
@@ -23,8 +23,10 @@ namespace _20201612StudentoAmziausTikrinimas
             {
                 Console.WriteLine("Leidziama, netaikyti nuolaidos.");
             }
-
-
+            else
+            {
+                Console.WriteLine("Neleidziama. Nepilnametis.");
+            }
             Console.Read();
         }
     }

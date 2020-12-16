@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20201216LyginisSK", "202012
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20201612StudentoAmziausTikrinimas", "20201612StudentoAmziausTikrinimas\20201612StudentoAmziausTikrinimas.csproj", "{FADE8388-0614-4DF3-8CAC-0D680BFA9559}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20201216SkaiciavimoMasinele", "20201216SkaiciavimoMasinele\20201216SkaiciavimoMasinele.csproj", "{12452D8A-D8A4-4100-A760-0E8E50E34EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20201216trikampis", "20201216trikampis\20201216trikampis.csproj", "{AD7874E1-4FAA-4517-B834-D7B152C34840}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{FADE8388-0614-4DF3-8CAC-0D680BFA9559}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FADE8388-0614-4DF3-8CAC-0D680BFA9559}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FADE8388-0614-4DF3-8CAC-0D680BFA9559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12452D8A-D8A4-4100-A760-0E8E50E34EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12452D8A-D8A4-4100-A760-0E8E50E34EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12452D8A-D8A4-4100-A760-0E8E50E34EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12452D8A-D8A4-4100-A760-0E8E50E34EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD7874E1-4FAA-4517-B834-D7B152C34840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7874E1-4FAA-4517-B834-D7B152C34840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7874E1-4FAA-4517-B834-D7B152C34840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7874E1-4FAA-4517-B834-D7B152C34840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
