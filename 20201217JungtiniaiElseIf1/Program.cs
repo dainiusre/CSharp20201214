@@ -10,41 +10,30 @@ namespace _20201217JungtiniaiElseIf1
     {
         static void Main(string[] args)
         {
-            double a = 0;
-            double b = 0;
-            double c = 0;
+            Console.WriteLine("Pirmas skaicius:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("antras skaicius:");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("trecias skaicius:");
+            double c = double.Parse(Console.ReadLine());
 
             if (a > b && a > c)
             {
-
+                Console.WriteLine("pirmas skaicius yra didziausias");
             }
             else if(b>c && b>a)
             {
-
+                Console.WriteLine("antras skaicius yra didziausias");
             }
             else if(c>a && c>b)
             {
-
+                Console.WriteLine("trecias skaicius yra didziausias");
             }
             else
             {
-                if(c==a)
-                {
-
-                }
-                else if(b==a)
-                {
-
-                }
-                else if (c == b)
-                {
-
-                }
-                else
-                {
-
-                }
+                Console.WriteLine("Nera vieno didziausio skaiciaus");
             }
+            Console.Read();
         }
     }
 }
