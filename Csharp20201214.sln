@@ -89,6 +89,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20210104Klases", "20210104K
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20210104KamuoliųSprogdinimas", "20210104KamuoliųSprogdinimas\20210104KamuoliųSprogdinimas.csproj", "{A088E2DA-24D8-4E0E-BC53-568B98BC6353}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20210106GyvunasKlases", "20210106GyvunasKlases\20210106GyvunasKlases.csproj", "{1C556FA9-549C-4BFC-A29D-1E5616F43447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20210106PaveldejimasGyvunasSuo", "20210106PaveldejimasGyvunasSuo\20210106PaveldejimasGyvunasSuo.csproj", "{13E807FA-FF8C-43EE-934E-AE86254CA9E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +271,14 @@ Global
 		{A088E2DA-24D8-4E0E-BC53-568B98BC6353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A088E2DA-24D8-4E0E-BC53-568B98BC6353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A088E2DA-24D8-4E0E-BC53-568B98BC6353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C556FA9-549C-4BFC-A29D-1E5616F43447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C556FA9-549C-4BFC-A29D-1E5616F43447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C556FA9-549C-4BFC-A29D-1E5616F43447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C556FA9-549C-4BFC-A29D-1E5616F43447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E807FA-FF8C-43EE-934E-AE86254CA9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E807FA-FF8C-43EE-934E-AE86254CA9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E807FA-FF8C-43EE-934E-AE86254CA9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E807FA-FF8C-43EE-934E-AE86254CA9E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

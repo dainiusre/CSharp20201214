@@ -9,18 +9,54 @@ namespace _20210104KamuoliųSprogdinimas
 {
     class Program
     {
+        public static Random RNG = new Random();
         static void Main(string[] args)
         {
-            Spalva raudona = new Spalva(255, 0, 0);
-            raudona.ColorDetails();
-            Spalva.KokiaCiaSpalva(raudona);
-
-
-            Spalva spl = Spalva.Parse("R 20 G 0 B 0");
-            spl.ColorDetails();
+            Metikas metikas = new Metikas("Justas");
+            List<Kamuolys> nupirktiKamuoliai = NusipirktiKamuoliu();
+            AtliktiMetimus(metikas, nupirktiKamuoliai);
+            InformacijaPoMetimu(nupirktiKamuoliai);
             Console.Read();
+        }
 
+        private static List<Kamuolys> NusipirktiKamuoliu()
+        {
+            List<Kamuolys> kamuoliai = new List<Kamuolys>();
+            int kamuliuKiekis = RNG.Next(5, 21);
+            for(int i = 0; i<kamuliuKiekis; i++)
+            {
+                int R = RNG.Next(0, 256);
+                int G = RNG.Next(0, 256);
+                int B = RNG.Next(0, 256);
+                Spalva color = new Spalva(R, G, B);
+                double skersmuo = RNG.Next(10, 31) + RNG.NextDouble();
+                Kamuolys naujasKam = new Kamuolys(color, skersmuo);
+                kamuoliai.Add(naujasKam);
+            }
+            return kamuoliai;
+        }
 
+        private static void AtliktiMetimus(Metikas metikas, List<Kamuolys> kamuoliai)
+        {
+            Console.WriteLine($"Šiandien kamuolius mėto {metikas.Vardas}");
+            
+            for(int i = 1; i<21; i++)
+            {
+                Console.WriteLine(i + "______________________________");
+                foreach (var kamuolys in kamuoliai)
+                {
+
+                    metikas.Mesti(kamuolys);
+                }
+            }
+        }
+
+        private static void InformacijaPoMetimu(List<Kamuolys> kamuoliuSarasas)
+        {
+            foreach(var kamuolys in kamuoliuSarasas)
+            {
+                kamuolys.Informacija();
+            }
         }
     }
 
@@ -70,9 +106,9 @@ namespace _20210104KamuoliųSprogdinimas
             A = 0;
         }
 
-        public void ColorDetails()
+        public string ColorDetails()
         {
-            Console.WriteLine($"R {R} G {G} B {B} A {A}");
+            return $"R {R} G {G} B {B} A {A}";
         }
 
         private bool InPossibleColorRange(int value)
@@ -117,5 +153,49 @@ namespace _20210104KamuoliųSprogdinimas
         public double Skersmuo { get; private set; }
         public int MetimuSkaicius { get; set; }
         public bool Sproges { get; private set; }
+
+        public Kamuolys(Spalva kamuolioSpalva, double skersmuo)
+        {
+            MetimuSkaicius = 0;
+            Sproges = false;
+            Skersmuo = skersmuo;
+            KamuolioSpalva = kamuolioSpalva;
+        }
+
+        public void Sprogti()
+        {
+            Skersmuo = 0;
+            Sproges = true;
+        }
+
+        public void Informacija()
+        {
+            string arSproges = Sproges ? "Taip" : "Ne";
+            Console.ForegroundColor = (ConsoleColor)Program.RNG.Next(0, 12);
+            Console.WriteLine($"Kamuolio spalva: {KamuolioSpalva.ColorDetails()}, Skersmuo: {Skersmuo}, Metimu skaicius: {MetimuSkaicius}, Ar sproges? {arSproges}");
+        }
+    }
+
+    class Metikas
+    {
+        public string Vardas { get; }
+        public Metikas(string vardas)
+        {
+            Vardas = vardas;
+        }
+        public void Mesti(Kamuolys kamuolys)
+        {
+            if(!kamuolys.Sproges)
+            {
+                kamuolys.MetimuSkaicius++;
+                double sansas = Program.RNG.NextDouble();
+
+                if (sansas < 0.1)
+                {
+                    kamuolys.Sprogti();
+                    kamuolys.Informacija();
+                }
+            }  
+        }
     }
 }
