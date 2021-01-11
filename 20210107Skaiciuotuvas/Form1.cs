@@ -15,6 +15,10 @@ namespace _20210107Skaiciuotuvas
         public Form1()
         {
             InitializeComponent();
+
+            string str = "afasfasf";
+            str = str.Remove(str.Length - 1);
+            MessageBox.Show(str);
         }
     }
 }
