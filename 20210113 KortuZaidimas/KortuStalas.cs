@@ -41,7 +41,6 @@ namespace _20210113_KortuZaidimas
         {            
             var kortosKontrole = (KortosControl)sender;
             ZaidimoZonaPanel.Controls.Clear();
-
             //kortosKontrole.Parent.Controls.Remove(kortosKontrole);
             ZaidimoZonaPanel.Controls.Add(kortosKontrole);
             kortosKontrole.Location = new Point(0, 0);
